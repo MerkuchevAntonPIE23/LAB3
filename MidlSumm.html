@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script>
+        let lengthArr = Number(prompt("Введите длинну массива"));
+        let arr1 = []
+        while (lengthArr > 0) {
+            arr1.push(Number(prompt()));
+            lengthArr--
+        }
+        let arr2 = []
+         for (let i = 1;i <= arr1.length;i++) {
+            let mathSumm = 0
+            let slicedArr = arr1.slice(0,i)
+            for (let j = 0;j <=slicedArr.length-1;j++) {
+                mathSumm+=slicedArr[j]
+            }
+            arr2.push(mathSumm / slicedArr.length)
+         }
+         alert (arr2)
+    </script>
+</body>
+</html>

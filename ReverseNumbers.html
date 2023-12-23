@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script>
+        let lengthArr = Number(prompt("Введите длинну массива"));
+        let arr1 = []
+        while (lengthArr > 0) {
+            arr1.push(Number(prompt()));
+            lengthArr--
+        }
+        let arr2 = []
+        for (let i = arr1.length-1;i>-1;i--) {
+            if (arr1[i] % 2 == 0) {
+                arr2.push(arr1[i])
+            }
+        }
+        alert (arr2)
+    </script>
+</body>
+</html>
